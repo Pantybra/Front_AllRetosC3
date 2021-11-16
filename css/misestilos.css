@@ -1,0 +1,230 @@
+.body {
+    background-image: url("/images/pared_cabania_bg.jpg");
+    /* linear-gradient(
+        120deg,
+        #efddf4 0,
+        #e0cbed 25%,
+        #ccb8e7 50%,
+        #b5a7e1 75%,
+        #9c98dd 100%
+    );*/
+}
+.inputs {
+    align-items: center;
+    flex-direction: row;
+}
+#cabeceralogo {
+    width: 100%;
+    height: 225px;
+    padding: 0%;
+    background-image: url("/images/Quebrada-Verde_cabanias_banner-3.jpg");
+}
+#cabeceralogo > div {
+    width: 1000px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+#cabeceralogo h1 {
+    font: 90px Cooper;
+    color: #f5a742;
+    -webkit-text-stroke: 3px #224b2c;
+    border: 10px;
+}
+#menuprincipal {
+    width: 96%;
+    height: 45px;
+    padding: 2%;
+    background-color: #e2a04a;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+#menuprincipal > div {
+    width: 960px;
+    margin: 0px auto;
+}
+#menuprincipal li {
+    display: inline-block;
+    height: 25px;
+    padding: 15px 10px 10px 10px;
+    margin-right: 5px;
+}
+#menuprincipal li:hover {
+    background-color: #e6cf6b;
+    border-radius: 6px;
+    transition: background-color 0.4s;
+}
+#menuprincipal a {
+    font: bold 20px Arial, sans-serif;
+    color: #4e6e23;
+    text-decoration: navajowhite;
+}
+
+hr {
+    display: block;
+    height: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    /* border-width: 2px; */
+    color: green;
+    /* background-color: green; */
+}
+
+main {
+    width: 100%;
+    padding: 2%;
+}
+
+main > div {
+    width: 2000px;
+    margin: 0px auto;
+}
+.form1 {
+    margin: 0 auto;
+}
+#articulosprincipales {
+    float: left;
+    width: 620px;
+    padding-top: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+#infoadicional {
+    float: right;
+    width: 280px;
+    padding: 20px;
+    background-color: #e7f1f5;
+    border-radius: 10px;
+}
+#infoadicional h1 {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.recuperar {
+    clear: both;
+}
+article {
+    position: relative;
+    padding: 20px 40px 20px 40px;
+}
+article time {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -70px;
+    width: 80px;
+    padding: 15px 5px;
+    background-color: #bcc1c4;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 5px;
+}
+.numerodia {
+    font: bold 36px Verdana, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+.nombredia {
+    font: 12px Verdana, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+article h1 {
+    margin-bottom: 5px;
+    font: bold 30px Georgia, sans-serif;
+}
+article p {
+    font: 18px Georgia, sans-serif;
+}
+figure {
+    margin: 10px 0px;
+}
+figure img {
+    padding: 5px;
+    border: 1px solid;
+}
+#pielogo {
+    width: 96%;
+    padding: 2%;
+    background-color: #27a00f;
+}
+#pielogo > div {
+    width: 960px;
+    margin: 0px auto;
+    background-color: #acb8ae;
+    border-radius: 10px;
+}
+.seccionpie {
+    float: left;
+    width: 270px;
+    padding: 25px;
+}
+.seccionpie h1 {
+    font: bold 20px Arial, sans-serif;
+}
+.seccionpie p {
+    margin-top: 5px;
+}
+.seccionpie a {
+    font: bold 16px Arial, sans-serif;
+    color: #666666;
+    text-decoration: none;
+}
+.seccionpie {
+    float: left;
+    width: 27.33%;
+    padding: 3%;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #4e6e23;
+    border: 1px;
+    color: #fcf9f9;
+    text-align: center;
+    font-size: 15px;
+    padding: 2px;
+    width: 105px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+}
+.button2 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #4e6e23;
+    border: 1px;
+    color: #fcf9f9;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px;
+    width: 200px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: "\00bb"; /* Entidades CSS. Para usar entidades HTML, use &#8594;*/
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
