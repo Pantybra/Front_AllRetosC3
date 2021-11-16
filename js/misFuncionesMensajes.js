@@ -97,8 +97,8 @@ function guardarInformacionMensajes() {
 
             success: function (response) {
                 console.log(response);
-                console.log("Se guardó correctamente");
-                alert("Se guardo correctamente");
+                console.log("Se Guardó Correctamente");
+                alert("Se Guardó Correctamente");
                 window.location.reload();
             },
             error: function (jqXHR, textStatus, errorThrown) {
@@ -148,7 +148,7 @@ function borrarMensaje(idElemento) {
         success: function (respuesta) {
             $("#resultado").empty();
             autoInicioMensajes();
-            alert("Se ha Eliminado.");
+            alert("Se ha Eliminado");
         },
     });
 }

@@ -41,7 +41,7 @@ function pintarRespuesta(respuesta) {
 
 function guardarInformacionCategorias() {
     if ($("#Cname").val().length == 0 || $("#Cdescription").val().length == 0) {
-        alert("Todos los campos son obligatorios");
+        alert("Todos los campos son Obligatorios");
     } else {
         let var2 = {
             name: $("#Cname").val(),
@@ -57,14 +57,14 @@ function guardarInformacionCategorias() {
 
             success: function (response) {
                 console.log(response);
-                console.log("Se guardo correctamente");
-                alert("Se guardo correctamente");
+                console.log("Se Guardó Correctamente");
+                alert("Se Guardó Correctamente");
                 window.location.reload();
             },
 
             error: function (jqXHR, textStatus, errorThrown) {
                 window.location.reload();
-                alert("No se guardo correctamente");
+                alert("NO se guardó correctamente");
             },
         });
     }
@@ -72,7 +72,7 @@ function guardarInformacionCategorias() {
 
 function actualizarInformacionCategorias(idElemento) {
     if ($("#Cname").val().length == 0 || $("#Cdescription").val().length == 0) {
-        alert("Todos los campos son obligatorios");
+        alert("Todos los campos son Obligatorios");
     } else {
         let myData = {
             id: idElemento,
@@ -93,7 +93,7 @@ function actualizarInformacionCategorias(idElemento) {
                 $("#Cname").val("");
                 $("#Cdescription").val("");
                 traerInformacionCategorias();
-                alert("se ha Actualizado correctamente la categoria");
+                alert("Se ha Actualizado Correctamente la categoría");
             },
         });
     }
@@ -114,7 +114,7 @@ function borrarCategoria(idElemento) {
         success: function (respuesta) {
             $("#resultado").empty();
             traerInformacionCategorias();
-            alert("Se ha Eliminado.");
+            alert("Se ha Eliminado");
         },
     });
 }
